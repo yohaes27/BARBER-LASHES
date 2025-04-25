@@ -1,0 +1,39 @@
+body {
+    background-color: #4882b0;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #69a3f0;
+    padding-top: 20px;
+  }
+  .colorAgenda{
+    color: #800000;
+  }
+  .sidebar a {
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+  }
+  .sidebar a:hover {
+    background-color: #4682b4;
+  }
+  .content {
+    margin-left: 260px;
+    padding: 20px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }

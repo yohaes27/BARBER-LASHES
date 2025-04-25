@@ -1,0 +1,126 @@
+:root{
+    --light-blue:aqua ;
+    --texto-blanco: rgb(202, 214, 224);
+    --vinotinto:#800000;
+    --text_color:rgb(160, 63, 25);
+}
+
+/* nuevo */
+body {
+    background-image: url("../../imagenes/fondo.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed !important; /* fija la imagen  */
+    background-size: cover;  /* cubre conpletamente la pantalla sin inportar que se recorte */
+    backdrop-filter: brightness(0.9);
+    
+  }
+.form-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+/* antigua */   
+
+.iformacion h2{
+    font-size: 30px;
+    color: var(--vinotinto);  
+}
+.iformacion .sut{
+    color: var(--light-blue);
+}
+
+h6{
+    position: relativea;
+    margin-left: -42%;
+    padding: 20px;
+}
+.iformacion form input{
+    border: 2px solid rgba(225, 225, 225, .2);
+    border-radius: 40px;
+    width: 80%;
+    text-align: center;
+}
+#password{
+    padding: 10px;
+    /* margin: ; */
+}
+#apellido{
+    padding: 10px;
+}
+input::placeholder{
+    color: var(--light-blue);
+    text-align: center;
+}
+.iformacion .btn{
+    background-color:var(--vinotinto);
+    
+    /* color: ;color de boton */
+    width: 30%;
+    height: 60px;
+    border-radius: 40px;
+    border: none;
+}
+.contenedor_1{
+    /* border: 2px solid var(--vinotinto); */
+    margin: 100px auto !important;
+    width: 500px;
+    max-width: 500px;
+    margin-left: 5px; 
+    
+    
+}
+.aler_ifo{
+    position: relative;
+    background-color: var(--vinotinto);
+    border-radius: 10px ; 
+    width: 500px;
+    height: 80px;
+    display: block;
+    margin: 10 7;
+    
+
+    /* background-position: ; */
+    /* background-color: darkred; */
+    /* text-align: center;    */
+}
+
+.aler_ifo .text {
+    position: absolute;
+    
+    color: var(--texto-blanco);
+    width: 80%;
+    height: 100%;
+}
+.aler_ifo .text h2{
+    text-align: center center;
+}
+.aler_ifo .ico {
+    position: absolute;
+    justify-content: center center;
+    color: var(--light-blue);
+    width: 20%;
+    height: 100%;
+    margin-left: 400px;
+
+}
+.aler_ifo .ico i{
+    font-size: 55px;
+    
+    /* text-align: center center; */
+    padding: 10px;
+    
+}
+.aler{
+    border-radius: 10px;
+    background-color: var(--light-blue);
+    text-align: center;
+} 
+.aler p{
+    color: var(--text_color);
+}  
+
+

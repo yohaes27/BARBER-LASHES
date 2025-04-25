@@ -1,0 +1,47 @@
+:root{
+    --azul:aqua;
+    --vinotinto:#800000;
+    
+}
+body {
+    background-image: url("../../imagenes/fondo.webp") !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-attachment: fixed !important; /* fija la imagen  */
+    background-size: cover;  /* cubre conpletamente la pantalla sin inportar que se recorte */
+    backdrop-filter: brightness(0.9);
+    
+  }
+.form-container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+.form-container h2{
+    font-size: 30px;
+    color: var(--vinotinto);
+}
+.form-container input{
+    border: 3px solid rgba(255, 255, 255, .2);
+    border-radius: 40px ;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    text-align: center;
+}
+.form-container input::placeholder{
+    color: var(--azul);
+}
+.form-container .btn{
+    background-color: var(--vinotinto) ;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+ 
+ 
