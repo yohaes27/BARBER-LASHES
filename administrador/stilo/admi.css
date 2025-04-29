@@ -1,0 +1,146 @@
+:root{
+    --menu:#69a3f0;
+}
+body {
+    background-color: #fff0f5;
+  }
+  /* menu */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 1022px;
+  background-color: var(--menu);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  transform:translateX(0);
+  transition:all 300ms ease;
+  z-index: 100;
+
+}
+
+/* menu anburger */
+.hamburger{
+  display: none;
+  font-size: 30px;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  z-index: 110;
+  color: #fff;
+  background-color: var(--menu);
+  padding: 10px;
+  border-radius: 5px;
+}
+/* .colorAgenda{ 
+  color: #800000; 
+} */
+
+.sidebar a {
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.sidebar a:hover {
+  background-color: #4682b4 ;
+}
+/* barar de busquda */
+.busquda{
+  position: absolute;
+  left: 48%;
+  margin-top: -144px;
+  transform: translate(-50%, -10%);
+  padding: 10px;
+}
+.busquda > input{
+  outline: none;
+  box-sizing: border-box;
+  height: 40px;
+  width: 0;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 30px;
+  font-size: 20px;
+  border: 1px solid aqua;
+  transition: all .7s ease;
+}
+/* texto de busquda */
+.busquda > input > ::placeholder{
+  color: white;
+  
+}
+
+/* div de icono */
+.busquda > .btn{
+  
+  position: absolute;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: #4682b4 ;
+  line-height: 35px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s;
+}
+.busquda > .btn i{
+  color: white;
+  font-size: 15px;
+  line-height: 35px;
+  transition: all .7s ease; 
+}
+.busquda:hover input{
+  width: 350px;
+
+}
+.busquda:hover i{
+  transform: rotate(-360px);
+}
+.busquda > .btn:hover{
+  background: #69a3f0;
+}
+/* contenido */
+.content {
+  margin-left: 260px;
+  padding: 20px;
+  margin-top: 55px ;
+}
+
+
+@media screen and (max-width : 1020px){
+    .hamburger{
+      display: block;
+      width: 100%;
+    }
+   
+    .sidebar{
+      transform: translateX(-100%);
+      width: 250px;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+      margin-top: 81px;
+      padding-top: 20px;      
+    }
+  
+    .sidebar.activacio{
+      transform: translateX(0);
+    }
+  
+    .content{
+      
+      margin-left: -12px;
+      padding: 20px;
+  
+    }
+       
+  }
